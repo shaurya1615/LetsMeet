@@ -132,6 +132,11 @@ const setPauseButton = () => {
   document.querySelector('.main__video_button').innerHTML = html;
 }
 
+function closeWin() {
+  var customWindow = window.open('', '_blank', '');
+  customWindow.close();
+}
+
 // function hideChat() {
 //   var element_main = document.getElementsByClassName("main__right_collapse");
 //   element_main[0].classList.toggle("main__right");
