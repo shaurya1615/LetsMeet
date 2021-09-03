@@ -6,7 +6,11 @@ let myVideoStream;
 const myVideo = document.createElement('video')
 myVideo.muted = true
 
-var peer = new Peer();
+var peer = new Peer(undefined, {
+  path: "/peerjs",
+  host: "/",
+  port: 443
+});
 
 
 navigator.mediaDevices.getUserMedia({
