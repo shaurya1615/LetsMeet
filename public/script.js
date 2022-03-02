@@ -7,9 +7,9 @@ const myVideo = document.createElement('video')
 myVideo.muted = true
 
 var peer = new Peer(undefined, {
-  path: "/peerjs",
-  host: "/",
-  port: 443
+  // path: "/peerjs",
+  // host: "/",
+  // port: 443
 });
 
 
@@ -133,8 +133,8 @@ const setPauseButton = () => {
 }
 
 function closeWin() {
-  var customWindow = window.open('', '_blank', '');
-  customWindow.close();
+  window.open('','_parent','');
+    window.close();
 }
 
 // function hideChat() {
